@@ -1,0 +1,883 @@
+mounika@LAPTOP-0KFB3QDJ:~$ pwd
+/home/mounika
+mounika@LAPTOP-0KFB3QDJ:~$ ls
+ ABCimpex1                                                                                    intialzing
+ Hashmum                                                                                      main.yml
+ Nani                                                                                         main1.yml
+ args.sh                                                                                      mounika_details.yml
+ argumentfunc.sh                                                                              mounika_playbook
+ book                                                                                         mounikarole
+ bootcamp                                                                                     nano.save
+ data.sh                                                                                      sample.txt
+ demo_fun.sh                                                                                  sample.yml
+ flag                                                                                         sample3.yml
+ flag1                                                                                        series.sh
+ hashmum                                                                                      temp
+ home                                                                                         zing
+ ifelse.sh                                                                                    zing1
+ input.sh                                                                                     zing2
+mounika@LAPTOP-0KFB3QDJ:~$ cd temp
+mounika@LAPTOP-0KFB3QDJ:~/temp$ ls
+filename.txt  focus.txt  hobsdir  key.txt  xyz
+mounika@LAPTOP-0KFB3QDJ:~/temp$ mkdir -p folder1/infolder
+mounika@LAPTOP-0KFB3QDJ:~/temp$ ls
+filename.txt  focus.txt  folder1  hobsdir  key.txt  p  xyz
+mounika@LAPTOP-0KFB3QDJ:~/temp$ cd folder1
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ ls
+infolder
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ cd ../..
+mounika@LAPTOP-0KFB3QDJ:~$ pwd
+/home/mounika
+mounika@LAPTOP-0KFB3QDJ:~$ cd /
+mounika@LAPTOP-0KFB3QDJ:/$ cd
+mounika@LAPTOP-0KFB3QDJ:~$ cd temp
+mounika@LAPTOP-0KFB3QDJ:~/temp$ cd folder1
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ echo "hello">mytext.txt
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ cat mytext.txt
+hello
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ cat my*
+hello
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ echo "welcome">mytext1.txt
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ cat mytext1.txt
+welcome
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ cat my*
+hello
+welcome
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ cat my* >mix.txt
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ cat mix.txt
+hello
+welcome
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ echo"now,we are appending this line">> mix.txt
+echonow,we are appending this line: command not found
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ ls
+infolder  mix.txt  mytext.txt  mytext1.txt
+mounika@LAPTOP-0KFB3QDJ:~/temp/folder1$ cd ..
+mounika@LAPTOP-0KFB3QDJ:~/temp$ whoami
+mounika
+mounika@LAPTOP-0KFB3QDJ:~/temp$ who
+mounika@LAPTOP-0KFB3QDJ:~/temp$ id
+uid=1000(mounika) gid=1000(mounika) groups=1000(mounika),4(adm),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),117(netdev)
+mounika@LAPTOP-0KFB3QDJ:~/temp$ w
+ 18:40:10 up  1:28,  0 users,  load average: 0.52, 0.58, 0.59
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+mounika@LAPTOP-0KFB3QDJ:~/temp$ man man
+mounika@LAPTOP-0KFB3QDJ:~/temp$ cd /
+mounika@LAPTOP-0KFB3QDJ:/$ ls
+bin  boot  dev  etc  home  init  lib  lib32  lib64  libx32  media  mnt  opt  proc  root  run  sbin  snap  srv  sys  tmp  usr  var
+mounika@LAPTOP-0KFB3QDJ:/$ cat etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+mounika:x:1000:1000:,,,:/home/mounika:/bin/bash
+nani:x:1001:1001::/home/nani:/bin/sh
+amma:x:1002:1003::/home/amma:/bin/sh
+janu:x:1003:1005::/home/janu:/bin/sh
+mounika@LAPTOP-0KFB3QDJ:/$ sudo useradd minnu
+[sudo] password for mounika:
+mounika@LAPTOP-0KFB3QDJ:/$ pwd
+/
+mounika@LAPTOP-0KFB3QDJ:/$ cat etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd:/usr/sbin/nologin
+systemd-timesync:x:102:104:systemd Time Synchronization,,,:/run/systemd:/usr/sbin/nologin
+messagebus:x:103:106::/nonexistent:/usr/sbin/nologin
+syslog:x:104:110::/home/syslog:/usr/sbin/nologin
+_apt:x:105:65534::/nonexistent:/usr/sbin/nologin
+tss:x:106:111:TPM software stack,,,:/var/lib/tpm:/bin/false
+uuidd:x:107:112::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:108:113::/nonexistent:/usr/sbin/nologin
+sshd:x:109:65534::/run/sshd:/usr/sbin/nologin
+landscape:x:110:115::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:111:1::/var/cache/pollinate:/bin/false
+mounika:x:1000:1000:,,,:/home/mounika:/bin/bash
+nani:x:1001:1001::/home/nani:/bin/sh
+amma:x:1002:1003::/home/amma:/bin/sh
+janu:x:1003:1005::/home/janu:/bin/sh
+minnu:x:1027:1031::/home/minnu:/bin/sh
+mounika@LAPTOP-0KFB3QDJ:/$ cd
+mounika@LAPTOP-0KFB3QDJ:~$ groupadd
+Usage: groupadd [options] GROUP
+
+Options:
+  -f, --force                   exit successfully if the group already exists,
+                                and cancel -g if the GID is already used
+  -g, --gid GID                 use GID for the new group
+  -h, --help                    display this help message and exit
+  -K, --key KEY=VALUE           override /etc/login.defs defaults
+  -o, --non-unique              allow to create groups with duplicate
+                                (non-unique) GID
+  -p, --password PASSWORD       use this encrypted password for the new group
+  -r, --system                  create a system account
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       directory prefix
+      --extrausers              Use the extra users database
+
+mounika@LAPTOP-0KFB3QDJ:~$ groupmod
+Usage: groupmod [options] GROUP
+
+Options:
+  -g, --gid GID                 change the group ID to GID
+  -h, --help                    display this help message and exit
+  -n, --new-name NEW_GROUP      change the name to NEW_GROUP
+  -o, --non-unique              allow to use a duplicate (non-unique) GID
+  -p, --password PASSWORD       change the password to this (encrypted)
+                                PASSWORD
+  -R, --root CHROOT_DIR         directory to chroot into
+  -P, --prefix PREFIX_DIR       prefix directory where are located the /etc/* files
+mounika@LAPTOP-0KFB3QDJ:~$ sudo groupadd training
+mounika@LAPTOP-0KFB3QDJ:~$ ls
+ ABCimpex          book          hashmum                                                                                      intialzing            nano.save     tempy
+ ABCimpex1         bootcamp      sample.txt                                                                                   zing
+ Hashmum           data.sh       home                                                                                         main1.yml             sample.yml    zing1
+ Nani              demo_fun.sh   ifelse.sh                                                                                    mounika_details.yml   sample3.yml   zing2
+ args.sh           flag          input.sh                                                                                     mounika_playbook      series.sh
+ argumentfunc.sh   flag          mounikarole                                                                                   temp
+mounika@LAPTOP-0KFB3QDJ:~$ ls -il
+total 0
+ 7599824371209536 drwxr-xr-x 1 mounika mounika 4096 Dec 17 12:22  ABCimpex
+17732923532796368 drwxr-xr-x 1 mounika mounika 4096 Dec 17 14:58  ABCimpex1
+14073748835640204 drwxr-xr-x 1 mounika mounika 4096 Jan  7 17:57  Hashmum
+23925373020421571 drwxr-xr-x 1 mounika mounika 4096 Dec  7 14:57  Nani
+13510798882130283 -rwxrwxr-- 1 mounika mounika   88 Dec 21 08:44  args.sh
+ 5629499534315782 -rwxrwxr-- 1 mounika mounika  124 Dec 13 17:29  argumentfunc.sh
+ 5910974510987871 drwxr-xr-x 1 mounika mounika 4096 Dec  8 16:00  book
+ 6755399441569184 drwxrwxr-x 1 mounika mounika 4096 Dec 20 15:37  bootcamp
+ 6755399441155209 -rwxrwxr-- 1 mounika mounika  112 Dec 13 14:36  data.sh
+11540474045151489 -rwxrwxr-- 1 mounika mounika  182 Dec 13 17:25  demo_fun.sh
+ 4503599627458260 drwxr-xr-x 1 mounika mounika 4096 Dec  2 08:00  flag
+ 7036874417814271 drwxr-xr-x 1 mounika mounika 4096 Dec  8 16:06  flag1
+ 7599824371214674 drwxr-xr-x 1 mounika mounika 4096 Jan  5 16:32  hashmum
+19984723346457037 drwxr-xr-x 1 mounika mounika 4096 Dec  7 15:20  home
+ 5629499534726466 -rwxrwxr-- 1 mounika mounika  185 Dec 21 08:46  ifelse.sh
+ 5629499534395146 -rwxrwxr-- 1 mounika mounika  162 Dec 21 08:45  input.sh
+ 4503599627381537 -rw-r--r-- 1 mounika mounika  355 Dec 16 10:45 'install-tomcat main.yml'
+ 7036874417872619 drwxrwxr-x 1 mounika mounika 4096 Dec 28 17:29  intialzing
+12666373951993345 -rw-r--r-- 1 mounika mounika  355 Dec 16 11:00  main.yml
+ 6192449487648281 -rw-r--r-- 1 mounika mounika  311 Dec 16 11:07  main1.yml
+37717646879237049 -rw-r--r-- 1 mounika mounika   95 Dec 16 12:10  mounika_details.yml
+ 6473924464360633 drwxr-xr-x 1 mounika mounika 4096 Dec 16 12:50  mounika_playbook
+ 2251799814089203 drwxr-xr-x 1 mounika mounika 4096 Dec 15 17:40  mounikarole
+ 7036874418170184 -rw------- 1 mounika mounika    1 Dec 15 17:29  nano.save
+ 4503599627392042 drwxr-xr-x 1 mounika mounika 4096 Dec  7 16:14  sample.txt
+ 6473924464568107 -rw-r--r-- 1 mounika mounika   97 Dec 15 17:22  sample.yml
+22236523160163573 -rw-r--r-- 1 mounika mounika   96 Dec 15 17:31  sample3.yml
+ 4222124650668911 -rwxr-xr-x 1 mounika mounika   99 Dec 16 17:51  series.sh
+ 9851624184957838 drwxr-xr-x 1 mounika mounika 4096 Jan  7 18:24  temp
+ 3096224743905406 drwxr-xr-x 1 mounika mounika 4096 Dec  1 17:39  tempy
+21110623253320934 drwxr-xr-x 1 mounika mounika 4096 Dec 28 16:50  zing
+ 3659174697345798 drwxr-xr-x 1 mounika mounika 4096 Dec 28 17:00  zing1
+ 6755399441163713 drwxrwxr-x 1 mounika mounika 4096 Dec 28 17:52  zing2
+mounika@LAPTOP-0KFB3QDJ:~$ ls -a
+ .                 .sudo_as_admin_successful   flag1                                                                                        mounikarole
+ ..                ABCimpex                    hashmum                                                                                      nano.save
+ .ansible          ABCimpex1                   sample.txt
+ .bash_history     Hashmum                     home                                                                                         sample.yml
+ .bash_logout      Nani                        ifelse.sh                                                                                    sample3.yml
+ .bashrc           args.sh                     input.sh                                                                                     series.sh
+ .config           argumentfunc.sh              temp
+ .landscape        book                        intialzing                                                                                   tempy
+ .local            bootcamp                    main.yml                                                                                     zing
+ .motd_shown       data.sh                     main1.yml                                                                                    zing1
+ .profile          demo_fun.sh                 mounika_details.yml                                                                          zing2
+ .python_history   flag                        mounika_playbook
+mounika@LAPTOP-0KFB3QDJ:~$ ls -l
+total 0
+drwxr-xr-x 1 mounika mounika 4096 Dec 17 12:22  ABCimpex
+drwxr-xr-x 1 mounika mounika 4096 Dec 17 14:58  ABCimpex1
+drwxr-xr-x 1 mounika mounika 4096 Jan  7 17:57  Hashmum
+drwxr-xr-x 1 mounika mounika 4096 Dec  7 14:57  Nani
+-rwxrwxr-- 1 mounika mounika   88 Dec 21 08:44  args.sh
+-rwxrwxr-- 1 mounika mounika  124 Dec 13 17:29  argumentfunc.sh
+drwxr-xr-x 1 mounika mounika 4096 Dec  8 16:00  book
+drwxrwxr-x 1 mounika mounika 4096 Dec 20 15:37  bootcamp
+-rwxrwxr-- 1 mounika mounika  112 Dec 13 14:36  data.sh
+-rwxrwxr-- 1 mounika mounika  182 Dec 13 17:25  demo_fun.sh
+drwxr-xr-x 1 mounika mounika 4096 Dec  2 08:00  flag
+drwxr-xr-x 1 mounika mounika 4096 Dec  8 16:06  flag1
+drwxr-xr-x 1 mounika mounika 4096 Jan  5 16:32  hashmum
+-rwxrwxr-- 1 mounika mounika  185 Dec 21 08:46  ifelse.sh
+-rwxrwxr-- 1 mounika mounika  162 Dec 21 08:45  input.sh
+-rw-r--r-- 1 mounika mounika  355 Dec 16 10:45 'install-tomcat main.yml'
+drwxrwxr-x 1 mounika mounika 4096 Dec 28 17:29  intialzing
+-rw-r--r-- 1 mounika mounika  355 Dec 16 11:00  main.yml
+-rw-r--r-- 1 mounika mounika  311 Dec 16 11:07  main1.yml
+-rw-r--r-- 1 mounika mounika   95 Dec 16 12:10  mounika_details.yml
+drwxr-xr-x 1 mounika mounika 4096 Dec 16 12:50  mounika_playbook
+drwxr-xr-x 1 mounika mounika 4096 Dec 15 17:40  mounikarole
+-rw------- 1 mounika mounika    1 Dec 15 17:29  nano.save
+drwxr-xr-x 1 mounika mounika 4096 Dec  7 16:14  sample.txt
+-rw-r--r-- 1 mounika mounika   97 Dec 15 17:22  sample.yml
+-rw-r--r-- 1 mounika mounika   96 Dec 15 17:31  sample3.yml
+-rwxr-xr-x 1 mounika mounika   99 Dec 16 17:51  series.sh
+drwxr-xr-x 1 mounika mounika 4096 Jan  7 18:24  temp
+drwxr-xr-x 1 mounika mounika 4096 Dec  1 17:39  tempy
+drwxr-xr-x 1 mounika mounika 4096 Dec 28 16:50  zing
+drwxr-xr-x 1 mounika mounika 4096 Dec 28 17:00  zing1
+drwxrwxr-x 1 mounika mounika 4096 Dec 28 17:52  zing2
+mounika@LAPTOP-0KFB3QDJ:~$ chmod o-w fsam.txt
+chmod: cannot access 'fsam.txt': No such file or directory
+mounika@LAPTOP-0KFB3QDJ:~$ chmod o-w sample.txt
+mounika@LAPTOP-0KFB3QDJ:~$ ls-lh sample.txt
+mounika@LAPTOP-0KFB3QDJ:~$ touch myemptyfile
+mounika@LAPTOP-0KFB3QDJ:~$ ls
+ ABCimpex          book          hashmum                                                                                      intialzing            myemptyfile   temp
+ ABCimpex1         bootcamp      main.yml                                                                                       nano.save           tempy
+ Hashmum           data.sh       home                                                                                         main1.yml             sample.txt    zing
+ Nani              demo_fun.sh   ifelse.sh                                                                                    mounika_details.yml   sample.yml    zing1
+ args.sh           flag          input.sh                                                                                     mounika_playbook      sample3.yml   zing2
+ argumentfunc.sh   flag1        'install-tomcat main.yml'                                                                     mounikarole           series.sh
+mounika@LAPTOP-0KFB3QDJ:~$ nano myemptyfile
+mounika@LAPTOP-0KFB3QDJ:~$ cat myemptyfile
+mounika@LAPTOP-0KFB3QDJ:~$ find . -type d -name "t*"
+./.ansible/tmp
+./mounikarole/tasks
+./mounikarole/templates
+./mounikarole/tests
+./mounika_playbook/install-tomcat/tasks
+./mounika_playbook/install-tomcat/templates
+./mounika_playbook/install-tomcat/tests
+./mounika_playbook/start-tomcat/tasks
+./mounika_playbook/start-tomcat/templates
+./mounika_playbook/start-tomcat/tests
+./temp
+./tempy
+mounika@LAPTOP-0KFB3QDJ:~$ rm -- myemptyfile
+mounika@LAPTOP-0KFB3QDJ:~$ free
+              total        used        free      shared  buff/cache   available
+Mem:        3569232     2389816      950064       17720      229352     1045684
+Swap:      11010048      981548    10028500
+mounika@LAPTOP-0KFB3QDJ:~$ uptime
+ 18:53:57 up  1:42,  0 users,  load average: 0.52, 0.58, 0.59
+mounika@LAPTOP-0KFB3QDJ:~$ python3
+Python 3.8.10 (default, Jun  2 2021, 10:49:15)
+[GCC 9.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "hello"
+'hello'
+>>> 12+78
+90
+>>> 56-8
+48
+>>> 357/78
+4.576923076923077
+>>> 568//9
+63
+>>> 789%7
+5
+>>> 89*9
+801
+>>>
+>>> name="geetha"
+>>> no=45
+>>> city="Hyderabad"
+>>> print("name is"+ name +"city:"+ city +" and No:"+str(no))
+name is geetha city:Hyderabad and No:45
+>>> if(no<10):
+...  print('Single digit no'+str(no))
+... else:
+...  print('Multi digit no'+str(no))
+...
+Multi digit no 45
+>>> no=546
+>>> if(no<10):
+...  print('Single digit no'+str(no))
+... elif(no<100):
+...  print('double digit no'+str(no))
+... elif(no<1000):
+...  print('triple digit no'+str(no))
+... elif(no<10000):
+...  print('four digit no'+str(no))
+... else:
+...  print('Multi digit no'+str(no))
+...
+triple digit no546
+>>> friends=['mouni','ramya','sri','leela']
+>>> friends[2]
+'sri'
+>>> friends[1]
+'ramya'
+>>> name= input("what is your name")
+what is your name mouni
+>>> print(name)
+ mouni
+>>>
+>>> a,b=0,1
+>>> n=14
+>>> while(a < n):
+...  print(a, end=' ')
+...  a,b = b,a+b
+...
+0 1 1 2 3 5 8 13 >>>
+>>> def calculate(no):
+...  if(no>100):
+...       print(no*no)
+...  else:
+...       print(no+no)
+...
+>>> calculate(200)
+40000
+>>> calculate(20)
+40
+>>> def hellofunction(n,m):
+...  if(n>m):
+...      print(str(n)+'is great')
+...  else:
+...      print(str(m)+'is great')
+...
+>>> hellofunction(5,15)
+15is great
+>>> class product:
+...  def setprooduct(name,price):
+...      self.name=name
+...      self.price=price
+...  def getprooduct(self):
+...      print(self.name)
+...      print(self.price)
+...
+>>> prd = product()
+>>> prd.setproduct('cake',657)
+>>> prd.getproduct()
+cake
+657
+>>> from math import*
+>>> a =pi
+>>> print(a)
+3.141592653589793
+>>> print(sqrt(64))
+8.0
+>>> print(pow(2,3))
+8.0
+>>> print(pow(6,8))
+1679616.0
+>>> print(round(567.789))
+568
+>>> print(floor(567.789))
+567
+>>> print(ceil(567.789))
+568
+>>>
+>>> exit()
+mounika@LAPTOP-0KFB3QDJ:~$ top
+top - 11:18:32 up 52 min,  0 users,  load average: 0.52, 0.58, 0.59
+Tasks:   4 total,   1 running,   3 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  4.4 us,  3.3 sy,  0.0 ni, 91.8 id,  0.0 wa,  0.5 hi,  0.0 si,  0.0 st
+MiB Mem :   3485.6 total,    917.3 free,   2344.3 used,    224.0 buff/cache
+MiB Swap:  10752.0 total,  10386.9 free,    365.1 used.   1010.7 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+    1 root      20   0    8944    136     92 S   0.0   0.0   0:00.25 init
+    7 root      20   0    8944    136     92 S   0.0   0.0   0:00.00 init
+    8 mounika   20   0   18212   1392   1320 S   0.0   0.0   0:00.20 bash
+   22 mounika   20   0   18948   2168   1524 R   0.0   0.1   0:00.09 top
+
+mounika@LAPTOP-0KFB3QDJ:~$ last
+wtmp begins Wed Dec  1 16:36:58 2021
+mounika@LAPTOP-0KFB3QDJ:~$ ps
+  PID TTY          TIME CMD
+    8 tty1     00:00:00 bash
+   43 tty1     00:00:00 ps
+mounika@LAPTOP-0KFB3QDJ:~$info
+mounika@LAPTOP-0KFB3QDJ:~$ env
+SHELL=/bin/bash
+WSL_DISTRO_NAME=Ubuntu-20.04
+NAME=LAPTOP-0KFB3QDJ
+PWD=/home/mounika
+LOGNAME=mounika
+HOME=/home/mounika
+LANG=C.UTF-8
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LESSCLOSE=/usr/bin/lesspipe %s %s
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=mounika
+SHLVL=1
+WSLENV=
+XDG_DATA_DIRS=/usr/local/share:/usr/share:/var/lib/snapd/desktop
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/WindowsApps/CanonicalGroupLimited.Ubuntu20.04onWindows_2004.2021.825.0_x64__79rhkp1fndgsc:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/sjred/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/sjred/AppData/Local/Programs/Microsoft VS Code/bin:/snap/bin
+HOSTTYPE=x86_64
+_=/usr/bin/env
+mounika@LAPTOP-0KFB3QDJ:~$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+rootfs         487078908 88553732 398525176  19% /
+none           487078908 88553732 398525176  19% /dev
+none           487078908 88553732 398525176  19% /run
+none           487078908 88553732 398525176  19% /run/lock
+none           487078908 88553732 398525176  19% /run/shm
+none           487078908 88553732 398525176  19% /run/user
+tmpfs          487078908 88553732 398525176  19% /sys/fs/cgroup
+C:\            487078908 88553732 398525176  19% /mnt/c
+mounika@LAPTOP-0KFB3QDJ:~$ man -df
+ruid=1000, euid=1000
+rgid=1000, egid=1000
+++priv_drop_count = 1
+From the config file /etc/manpath.config:
+  Mandatory mandir `/usr/man'.
+  Mandatory mandir `/usr/share/man'.
+  Mandatory mandir `/usr/local/share/man'.
+  Path `/bin' mapped to mandir `/usr/share/man'.
+  Path `/usr/bin' mapped to mandir `/usr/share/man'.
+  Path `/sbin' mapped to mandir `/usr/share/man'.
+  Path `/usr/sbin' mapped to mandir `/usr/share/man'.
+  Path `/usr/local/bin' mapped to mandir `/usr/local/man'.
+  Path `/usr/local/bin' mapped to mandir `/usr/local/share/man'.
+  Path `/usr/local/sbin' mapped to mandir `/usr/local/man'.
+  Path `/usr/local/sbin' mapped to mandir `/usr/local/share/man'.
+  Path `/usr/X11R6/bin' mapped to mandir `/usr/X11R6/man'.
+  Path `/usr/bin/X11' mapped to mandir `/usr/X11R6/man'.
+  Path `/usr/games' mapped to mandir `/usr/share/man'.
+  Path `/opt/bin' mapped to mandir `/opt/man'.
+  Path `/opt/sbin' mapped to mandir `/opt/man'.
+  Global mandir `/usr/man', catdir `/var/cache/man/fsstnd'.
+  Global mandir `/usr/share/man', catdir `/var/cache/man'.
+  Global mandir `/usr/local/man', catdir `/var/cache/man/oldlocal'.
+  Global mandir `/usr/local/share/man', catdir `/var/cache/man/local'.
+  Global mandir `/usr/X11R6/man', catdir `/var/cache/man/X11R6'.
+  Global mandir `/opt/man', catdir `/var/cache/man/opt'.
+  Global mandir `/snap/man', catdir `/var/cache/man/snap'.
+  Added sections: `1', `n', `l', `8', `3', `2', `3posix', `3pm', `3perl', `3am', `5', `4', `9', `6', `7'.
+mounika@LAPTOP-0KFB3QDJ:~$ df -ah
+Filesystem      Size  Used Avail Use% Mounted on
+rootfs          465G   85G  381G  19% /
+none            465G   85G  381G  19% /dev
+sysfs              0     0     0    - /sys
+proc               0     0     0    - /proc
+devpts             0     0     0    - /dev/pts
+none            465G   85G  381G  19% /run
+none            465G   85G  381G  19% /run/lock
+none            465G   85G  381G  19% /run/shm
+none            465G   85G  381G  19% /run/user
+binfmt_misc        0     0     0    - /proc/sys/fs/binfmt_misc
+tmpfs           465G   85G  381G  19% /sys/fs/cgroup
+cgroup             0     0     0    - /sys/fs/cgroup/devices
+C:\             465G   85G  381G  19% /mnt/c
+mounika@LAPTOP-0KFB3QDJ:~$ sudo apt update
+[sudo] password for mounika:
+Hit:1 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease
+Hit:2 http://archive.ubuntu.com/ubuntu focal InRelease
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1445 kB]
+Get:7 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1109 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal-updates/main Translation-en [289 kB]
+Get:9 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [202 kB]
+Get:10 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [9104 B]
+Get:11 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [609 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [14.7 kB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [663 kB]
+Get:14 http://security.ubuntu.com/ubuntu focal-security/restricted Translation-en [86.8 kB]
+Get:15 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 c-n-f Metadata [536 B]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [94.6 kB]
+Get:17 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [675 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [532 B]
+Get:19 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [892 kB]
+Get:20 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [114 kB]
+Get:21 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [13.0 kB]
+Get:22 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [21.8 kB]
+Get:23 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [536 B]
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [195 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [20.0 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [24.8 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [620 B]
+Get:28 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [19.2 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal-backports/universe Translation-en [13.3 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 c-n-f Metadata [656 B]
+Fetched 6848 kB in 27s (253 kB/s)
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+97 packages can be upgraded. Run 'apt list --upgradable' to see them.
+mounika@LAPTOP-0KFB3QDJ:~$ sudo apt install software-properties-common
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+software-properties-common is already the newest version (0.99.9.8).
+0 upgraded, 0 newly installed, 0 to remove and 97 not upgraded.
+mounika@LAPTOP-0KFB3QDJ:~$ sudo add-apt-repository --yes --update ppa:ansible/ansible
+Hit:1 http://security.ubuntu.com/ubuntu focal-security InRelease
+Hit:2 http://ppa.launchpad.net/ansible/ansible/ubuntu focal InRelease
+Hit:3 http://archive.ubuntu.com/ubuntu focal InRelease
+Hit:4 http://archive.ubuntu.com/ubuntu focal-updates InRelease
+Hit:5 http://archive.ubuntu.com/ubuntu focal-backports InRelease
+Reading package lists... Done
+mounika@LAPTOP-0KFB3QDJ:~$ sudo apt install ansible
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+The following additional packages will be installed:
+  python3-jmespath python3-kerberos python3-ntlm-auth python3-requests-kerberos python3-requests-ntlm python3-winrm python3-xmltodict
+The following NEW packages will be installed:
+  python3-jmespath python3-kerberos python3-ntlm-auth python3-requests-kerberos python3-requests-ntlm python3-winrm python3-xmltodict
+The following packages will be upgraded:
+  ansible
+1 upgraded, 7 newly installed, 0 to remove and 96 not upgraded.
+Need to get 21.5 MB of archives.
+After this operation, 13.3 MB of additional disk space will be used.
+Do you want to continue? [Y/n]
+Get:1 http://ppa.launchpad.net/ansible/ansible/ubuntu focal/main amd64 ansible all 5.1.0-1ppa~focal [21.4 MB]
+Get:2 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 python3-jmespath all 0.9.4-2ubuntu1 [21.5 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-kerberos amd64 1.1.14-3.1build1 [22.6 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-ntlm-auth all 1.1.0-1 [19.6 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-requests-kerberos all 0.12.0-2 [11.9 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-requests-ntlm all 1.1.0-1 [6004 B]
+Get:7 http://archive.ubuntu.com/ubuntu focal/universe amd64 python3-xmltodict all 0.12.0-1 [12.6 kB]
+(Reading database ... 74872 files and directories currently installed.)rm all 0.3.0-2 [21.7 kB]
+        : [ 100%] [..................................................................................................................................................]
+mounika@LAPTOP-0KFB3QDJ:~$ bash --version
+GNU bash, version 5.0.17(1)-release (x86_64-pc-linux-gnu)
+Copyright (C) 2019 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+mounika@LAPTOP-0KFB3QDJ:~$ echo $SHELL
+/bin/bash
+mounika@LAPTOP-0KFB3QDJ:~$ #!/bin/bash
+mounika@LAPTOP-0KFB3QDJ:~$ echo hello world
+hello world
+mounika@LAPTOP-0KFB3QDJ:~$ nano myfile.sh
+mounika@LAPTOP-0KFB3QDJ:~$ ./myfile.sh
+welocme all
+mounika suryapet                       
+mounika@LAPTOP-0KFB3QDJ:~$ nano ifelse.sh
+mounika@LAPTOP-0KFB3QDJ:~$ ./ifelse.sh
+demo of if -else
+enter a fruit name
+apple
+ yay, they match!
+mounika@LAPTOP-0KFB3QDJ:~$ ./ifelse.sh
+demo of if -else
+enter a fruit name
+mango
+ boo, they don't match
+mounika@LAPTOP-0KFB3QDJ:~$ nano data.sh
+mounika@LAPTOP-0KFB3QDJ:~$ ./data.sh
+ idno = 234
+ name = mouni
+city =  hyderabad
+job role = devops engineer
+mounika@LAPTOP-0KFB3QDJ:~$ nano input.sh
+mounika@LAPTOP-0KFB3QDJ:~$ ./input.sh
+training session,
+welcome to ust,
+ good morning,
+mounika@LAPTOP-0KFB3QDJ:~$ nano args.sh
+mounika@LAPTOP-0KFB3QDJ:~$ ./args.sh
+ input values,
+values  are reversed,
+mounika@LAPTOP-0KFB3QDJ:~$ nano argumentfunc.sh
+mounika@LAPTOP-0KFB3QDJ:~$ ./argumentfunc.sh
+function with argument demo
+hi,
+welcome,
+mounika@LAPTOP-0KFB3QDJ:~$ ./demo_fun.sh
+demo of function
+welcome to shell scripting
+this is function body
+argument 1 is
+mounika@LAPTOP-0KFB3QDJ:~$ ansible -h
+usage: ansible [-h] [--version] [-v] [-b] [--become-method BECOME_METHOD] [--become-user BECOME_USER] [-K] [-i INVENTORY] [--list-hosts] [-l SUBSET]
+               [-P POLL_INTERVAL] [-B SECONDS] [-o] [-t TREE] [-k] [--private-key PRIVATE_KEY_FILE] [-u REMOTE_USER] [-c CONNECTION] [-T TIMEOUT]
+               [--ssh-common-args SSH_COMMON_ARGS] [--sftp-extra-args SFTP_EXTRA_ARGS] [--scp-extra-args SCP_EXTRA_ARGS] [--ssh-extra-args SSH_EXTRA_ARGS] [-C]
+               [--syntax-check] [-D] [-e EXTRA_VARS] [--vault-id VAULT_IDS] [--ask-vault-password | --vault-password-file VAULT_PASSWORD_FILES] [-f FORKS]
+               [-M MODULE_PATH] [--playbook-dir BASEDIR] [--task-timeout TASK_TIMEOUT] [-a MODULE_ARGS] [-m MODULE_NAME]
+               pattern
+optional arguments:
+  --ask-vault-password, --ask-vault-pass
+                        ask for vault password
+  --list-hosts          outputs a list of matching hosts; does not execute anything else
+  --playbook-dir BASEDIR
+                        Since this tool does not use playbooks, use this as a substitute playbook directory.This sets the relative path for many features including
+                        roles/ group_vars/ etc.
+  --syntax-check        perform a syntax check on the playbook, but do not execute it
+  --task-timeout TASK_TIMEOUT
+                        set task timeout limit in seconds, must be positive integer.
+  --vault-id VAULT_IDS  the vault identity to use
+  --vault-password-file VAULT_PASSWORD_FILES, --vault-pass-file VAULT_PASSWORD_FILES
+                        vault password file
+  --version             show program's version number, config file location, configured module search path, module location, executable location and exit
+  -B SECONDS, --background SECONDS
+                        run asynchronously, failing after X seconds (default=N/A)
+  -C, --check           don't make any changes; instead, try to predict some of the changes that may occur
+  -D, --diff            when changing (small) files and templates, show the differences in those files; works great with --check
+ mounika@LAPTOP-0KFB3QDJ:~$ ansible --version
+ansible [core 2.11.7]
+  config file = /etc/ansible/ansible.cfg
+  configured module search path = ['/home/mounika/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3/dist-packages/ansible
+  ansible collection location = /home/mounika/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.8.10 (default, Jun  2 2021, 10:49:15) [GCC 9.4.0]
+  jinja version = 2.10.1
+  libyaml = True
+mounika@LAPTOP-0KFB3QDJ:~$ nano sample.yml
+mounika@LAPTOP-0KFB3QDJ:~$ cat sample.yml
+---
+student:
+     name: jhon
+     roll no: 25
+     section:  B
+     location: hyderabad
+...   
+mounika@LAPTOP-0KFB3QDJ:~$ nano main.yml
+mounika@LAPTOP-0KFB3QDJ:~$ cat main.yml
+---
+#install mounika arifacts
+-
+  block:
+     - name: install tomcat artifacts
+       action: >
+          yum name = "demo-tomcat-1" state = present
+         register: output
+
+  always:
+    - debug:
+        msg:
+         -"install tomcat artifacts task ended with message:{{output}}
+         -"install tomcat artifacts - {{output}}
+
+mounika@LAPTOP-0KFB3QDJ:~$ nano sample3.yml
+mounika@LAPTOP-0KFB3QDJ:~$ cat sample3.yml
+---
+    Details:
+          name: jhon
+          location: hyderabad
+          id: 34667
+...
+mounika@LAPTOP-0KFB3QDJ:~$ nano main1.yml
+mounika@LAPTOP-0KFB3QDJ:~$ cat main1.yml
+#start tomcat
+-
+    block:
+      - name: start tomcat
+      command: <path of tomcat>/bin/startup.sh"
+      register: output
+      become: true
+
+     always:
+       - debug:
+          msg:
+          - "start tomcat task ended with message: {{output}}"
+          - "tomcat started - {{output.changed}}"
+mounika@LAPTOP-0KFB3QDJ:~$ nano mounika_details.yml
+mounika@LAPTOP-0KFB3QDJ:~$ cat mounika_details.yml
+---
+- hosts:  tomcat-node
+roles:
+    - {role:  install-tomcat}
+    - {role:  start-tomcat}
+...
+
+mounika@LAPTOP-0KFB3QDJ:~$ ansible-galaxy init --force --offline mounikarole
+- Role mounikarole was created successfully
+mounika@LAPTOP-0KFB3QDJ:~$ tree mounikarole/
+mounikarole/
+├── README.md
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+8 directories, 8 files
+mounika@LAPTOP-0KFB3QDJ:~$ cd mounikarole
+mounika@LAPTOP-0KFB3QDJ:~/mounikarole$ ls
+README.md  defaults  files  handlers  meta  tasks  templates  tests  vars
+mounika@LAPTOP-0KFB3QDJ:~/mounikarole$ cd
+mounika@LAPTOP-0KFB3QDJ:~$ cd mounika_playbook
+mounika@LAPTOP-0KFB3QDJ:~/mounika_playbook$ ls
+install-tomcat  nani.yaml  nani.yml  sri_orchestrate.yml  start-tomcat
+mounika@LAPTOP-0KFB3QDJ:~/mounika_playbook$
+
+# syntax=docker/dockerfile:1
+FROM node:12-alpine
+RUN apk add --no-cache python2 g++ make 
+WORKDIR /app
+COPY . .
+RUN  yarn install --production
+CMD ["node", "src/index.js"]
+
+indows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\sjred\Downloads\getting-started-master (1)> cd getting-started-master
+PS C:\Users\sjred\Downloads\getting-started-master (1)\getting-started-master> cd app
+PS C:\Users\sjred\Downloads\getting-started-master (1)\getting-started-master\app> docker -v
+Docker version 20.10.11, build dea9396
+PS C:\Users\sjred\Downloads\getting-started-master (1)\getting-started-master\app> docker build -t getting-started .
+[+] Building 166.8s (10/15)
+[+] Building 167.0s (10/15)
+[+] Building 481.3s (16/16) FINISHED
+ => [internal] load build definition from Dockerfile                                                    4.9s 
+ => => transferring dockerfile: 216B                                                                    0.9s 
+ => [internal] load .dockerignore                                                                       4.4s 
+ => => transferring context: 2B                                                                         0.9s 
+ => resolve image config for docker.io/docker/dockerfile:1                                             13.6s 
+ => [auth] docker/dockerfile:pull token for registry-1.docker.io                                        0.0s 
+ => docker-image://docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61  15.4s 
+ => => resolve docker.io/docker/dockerfile:1@sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cf  0.4s 
+ => => sha256:42399d4635eddd7a9b8a24be879d2f9a930d0ed040a61324cfdf59ef1357b3b2 2.00kB / 2.00kB          0.0s 
+ => => sha256:93f32bd6dd9004897fed4703191f48924975081860667932a4df35ba567d7426 528B / 528B              0.0s 
+ => => sha256:e532695ddd93ca7c85a816c67afdb352e91052fab7ac19a675088f80915779a7 1.21kB / 1.21kB          0.0s 
+ => => sha256:24a639a53085eb680e1d11618ac62f3977a3926fedf5b8471ace519b8c778030 9.67MB / 9.67MB          4.5s 
+ => [internal] load build definition from Dockerfile                                                    0.0s 
+ => [auth] library/node:pull token for registry-1.docker.io                                             0.0s
+ => => transferring context: 58.79MB                                                                  287.3s
+ => => resolve docker.io/library/node:12-alpine@sha256:05d61228b85c54b5527e74afc54153eb3572aae005948fb  0.6s
+ => => sha256:372c365de555b9c499bfadf6951cde3d1598732a1da36a5bfb1ffb7541818dce 1.16kB / 1.16kB          0.0s
+ => => sha256:59bf1c3509f33515622619af21ed55bbe26d24913cedbca106468a5fb37a50c3 2.82MB / 2.82MB          4.1s
+ => => sha256:f1265917d9305e25a9e76adfd4b37351e38e60031319d45c209871557fd1eac2 24.77MB / 24.77MB       21.2s
+ => => sha256:550febb8ed3d64773ad7a40aefc70b277f5f6d4b100c21a03190664c17614e5d 2.37MB / 2.37MB          7.7s
+ => => sha256:8a58962111cad6109092438806c78cbe4d23fee518e1d0988cff05b8a9885671 449B / 449B              6.3s
+ => => extracting sha256:f1265917d9305e25a9e76adfd4b37351e38e60031319d45c209871557fd1eac2              11.0s
+ => => extracting sha256:550febb8ed3d64773ad7a40aefc70b277f5f6d4b100c21a03190664c17614e5d               0.5s
+ => [2/5] RUN  apk add --no-cache python2 g++ make                                                    159.5s
+ => [3/5] WORKDIR  /app                                                                                 7.4s
+ => [4/5] COPY . .                                                                                     13.6s
+ => exporting to image                                                                                 60.2s
+ => => exporting layers                                                                                58.4s
+ => => writing image sha256:a8a7d3bc328c556437861dbda26f47ac4f2376104cede4a96624d7f6a490467d            0.4s
+
+Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+PS C:\Users\sjred\Downloads\getting-started-master (1)\getting-started-master\app> docker run -dp 3000:3000 getting-started
+2db281e93b3083473bee117ae5a2cd05e12f3c1eafa676a1f2749da8d46d66d9
+PS C:\Users\sjred\Downloads\getting-started-master (1)\getting-started-master\app> docker ps
+CONTAINER ID   IMAGE             COMMAND                  CREATED         STATUS         PORTS                    NAMES
+2db281e93b30   getting-started   "docker-entrypoint.s…"   7 minutes ago   Up 6 minutes   0.0.0.0:3000->3000/tcp   zealous_meitner
+PS C:\Users\sjred\Downloads\getting-started-master (1)\getting-started-master\app> docker stop 2db281e93b30
+2db281e93b30
+PS C:\Users\sjred\Downloads\getting-started-master (1)\getting-started-master\app> docker rm 2db281e93b30
+2db281e93b30
+PS C:\Users\sjred\Downloads\getting-started-master (1)\getting-started-master\app> docker run -dp 3000:3000 getting-started
+b2379800c763f0eabc7c92dbe9557422ab765777dace5ec2e8dc96e937bdd200
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
